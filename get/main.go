@@ -1,5 +1,5 @@
 // 浏览器或控制台执行如下命令
-// http://localhost:8080/ping
+// http://localhost:8080/user
 
 package main
 

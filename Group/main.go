@@ -8,12 +8,17 @@ import (
 
 func main() {
 	router := gin.Default()
+
 	v1 := router.Group("/v1")
 	{
 		v1.GET("/read", readEndpoint)
 	}
-	fmt.Println(router)
-	fmt.Println(v1)
+
+	v2 := router.Group("/v2")
+	{
+		v2.GET("/login", loginEndpoint)
+	}
+
 }
 
 func readEndpoint(c *gin.Context) {
